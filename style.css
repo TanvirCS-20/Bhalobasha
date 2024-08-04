@@ -1,0 +1,69 @@
+:root {
+  --jolpori-side-size: -35px;
+  --jolpori-top-size: -30px;
+  --jolpori-bottom-size: -40px;
+}
+h1 {
+  text-align: center;
+  color: rgb(135, 17, 78);
+  width: 80vw;
+}
+body {
+  background-color: rgb(255, 154, 171);
+  display: flex;
+  justify-content: center;
+}
+.bhalobasha-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bhalobasha-2nd-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.love-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jolpori {
+  position: absolute;
+  animation: love-you-bristy 5s infinite linear;
+}
+@keyframes love-you-bristy {
+  0%,
+  100% {
+    transform: scale(1.5) rotate(-10deg);
+  }
+  50% {
+    transform: scale(2) rotate(10deg);
+  }
+}
+.jolpori-01 {
+  top: var(--jolpori-top-size);
+  left: var(--jolpori-side-size);
+}
+.jolpori-02 {
+  top: var(--jolpori-top-size);
+  right: var(--jolpori-side-size);
+}
+.jolpori-03 {
+  bottom: var(--jolpori-bottom-size);
+  left: var(--jolpori-side-size);
+}
+.jolpori-04 {
+  bottom: var(--jolpori-bottom-size);
+  right: var(--jolpori-side-size);
+}
+img {
+  border-radius: 50%;
+}
+.bhalobashar-copyright {
+  font-size: 15px;
+  font-weight: 100;
+}
